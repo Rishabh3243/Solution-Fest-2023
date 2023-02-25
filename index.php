@@ -7,6 +7,6 @@
     <title>LUSHIVE</title>
 </head>
 <body>
-    <?php include_once 'Nav/Nav.html' ;?>
+    <?php  include_once 'Nav/Nav.html' ;?>
 </body>
 </html>
