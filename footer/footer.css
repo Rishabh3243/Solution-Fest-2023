@@ -1,0 +1,55 @@
+@media (max-width: 767.98px) {
+  .ftco-section {
+    padding: 7em 0; } }
+
+.ftco-footer {
+  font-size: 16px;
+  background: #ccffeb;
+  padding: 1% 0;
+  z-index: 0; }
+  .ftco-footer .ftco-footer-logo {
+    text-transform: uppercase;
+    letter-spacing: .1em; }
+  .ftco-footer .ftco-footer-widget h2 {
+    font-weight: normal;
+    color: #002752;
+    margin-bottom: 5%;
+    font-size: 22px;
+    font-weight: 600; }
+  .ftco-footer .ftco-footer-widget ul li {
+    margin-bottom: 2%; }
+    .ftco-footer .ftco-footer-widget ul li a {
+      color: rgba(0, 0, 0, 0.6); }
+      .ftco-footer .ftco-footer-widget ul li a span {
+        color: rgba(166, 19, 19, 0.6); }
+        .ftco-footer .ftco-footer-widget ul li span{
+          color: rgba(166, 19, 19, 0.6);}
+          .ftco-footer .ftco-footer-widget ul li span p{
+            color: #000;
+          }
+   .ftco-footer p {
+       color: rgba(0, 0, 0, 0.7); }
+      
+   .ftco-footer .ftco-footer-widget a{
+      color:rgba(0, 0, 0, 0.7); }
+    .ftco-footer a {
+       color: rgba(0, 0, 0, 0.7); }
+     .ftco-footer a:hover {
+         color: #3d0101; }
+     .ftco-footer .ftco-heading-2 {
+        font-size: 17px;
+        font-weight: 400;
+        color: #000000; }
+
+block-1 ul {
+  padding: 0; }
+  .block-1 ul li, .block-1 ul li > a {
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 1%; }
+  .block-1 ul li span {
+    color: rgba(0, 0, 0, 0.7); }
+  .block-1 ul li .text {
+    display: table-cell;
+    vertical-align: top;
+    color:rgba(0, 0, 0, 0.7) }
