@@ -7,6 +7,11 @@
     <title>LUSHIVE</title>
 </head>
 <body>
+    <?php
+    include("config.php");
+    include("firebase.php");
+    $db=new firebaseRDB($databaseURL)
+    ?>
     <?php  include_once 'Nav/Nav.html' ;?> 
 </body>
 </html>
