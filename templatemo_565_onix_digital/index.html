@@ -668,7 +668,10 @@ https://templatemo.com/tm-565-onix-digital
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-button" onclick="sendMail()">Submit Request</button>
+                  <input type="submit" id="form-submit" class="main-button" onclick='sendMail()'/>
+                  <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                  </script>
                   <script type="text/javascript">
                     emailjs.init('yX5AWYGq8FbVcW7pH')
                   </script>
