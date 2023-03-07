@@ -32,7 +32,7 @@
                         <button type="submit" class="btn btn-success btn-block mb-4" name="btnSubmit">
                             Login
                         </button>
-                        <p >Don't have an account? <a href="#register" style="text-decoration: none;">Register</a></p>                     
+                        <p >Don't have an account? <a href="signup.php" style="text-decoration: none;">Register</a></p>                     
 
                     </div> 
                 </div>
@@ -67,6 +67,7 @@
                     ?>
                 <script>
                     alert("Login Successfully...");
+                    window.location.href="Dash/index.html";
                 </script>
                 <?php
                 }
