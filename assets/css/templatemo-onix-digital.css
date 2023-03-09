@@ -939,7 +939,7 @@ Banner Style
   line-height: 46px;
   border-radius: 50%;
   background: rgb(76, 192, 76);
-  background: linear-gradient(105deg, rgba(255,104,95,1) 0%, rgba(255,144,104,1) 100%);
+  background: linear-gradient(105deg, rgb(38, 174, 7) 0%, rgb(43, 250, 57) 100%);
   color: #fff;
   font-size: 20px;
 }
