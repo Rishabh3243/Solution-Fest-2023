@@ -1084,6 +1084,15 @@ About
   margin-right: 30px;
 }
 
+.about-us .right-image {
+  margin-left: 30px;
+  float: right;
+}
+
+.about-us .heading h2{
+  margin-left: 60px;
+}
+
 .about-us .section-heading h2 {
   margin-right: 60px;
 }
