@@ -16,7 +16,7 @@
             ?>
             <script>
                 alert("Registered Successfully...");
-                window.location.href="login.php";
+                window.location.href="login.html";
             </script>
             <?php
         }

@@ -23,15 +23,12 @@
                 </script>
                 <?php
                 }
-                else
-                {
-                    ?>
-                <script>
-                    alert("User Not Found...");
-                </script>
-                <?php
-                }
             }
+            ?>
+            <script>
+                alert("User Not Found...");
+            </script>
+            <?php
         }
         else
         {
