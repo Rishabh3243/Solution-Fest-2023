@@ -14,7 +14,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
                         <h2>Sign in</h2>
-                        <form action="" method="post">               
+                        <form action="login2.php" method="post">               
             
                         <!-- Email input -->
                         <div class="outline">
@@ -32,7 +32,7 @@
                         <button type="submit" class="btn btn-success btn-block mb-4" name="btnSubmit">
                             Login
                         </button>
-                        <p >Don't have an account? <a href="signup.php" style="text-decoration: none;">Register</a></p>                     
+                        <p >Don't have an account? <a href="signup.html" style="text-decoration: none;">Register</a></p>                     
 
                     </div> 
                 </div>
@@ -46,48 +46,3 @@
         <!-- Section: Design Block -->
     </body>
 </html>
-<?php
-    if(isset($_POST['btnSubmit']))
-    {
-        $email=$_POST['email'];
-        $pass=$_POST['pass'];
-        if($email!="" and $pass!="")
-        {
-            $pass=md5($_POST['pass']);
-            include("DB/config.php");
-            include("DB/firebaseRDB.php");
-            $db = new firebaseRDB($databaseURL);
-            $data = $db->retrieve("users");
-            $data = json_decode($data, 1);
-
-            foreach($data as $user)
-            {
-                if($user['password']==$pass)
-                {
-                    ?>
-                <script>
-                    alert("Login Successfully...");
-                    window.location.href="Dash/index.html";
-                </script>
-                <?php
-                }
-                else
-                {
-                    ?>
-                <script>
-                    alert("User Not Found...");
-                </script>
-                <?php
-                }
-            }
-        }
-        else
-        {
-            ?>
-            <script>
-                alert("Password can't be empty...");
-            </script>
-            <?php
-        }
-    }
-?>
