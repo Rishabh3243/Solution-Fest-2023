@@ -9,18 +9,23 @@
       function drawVisualization() {
         // Some raw data (not necessarily accurate)
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Energy crops', 'Waste and residues', 'Forestry plantings', 'Traditional use of biomass'],
-          ['2010',  4.9,      4.6,        14.1,            25.1],
-          ['2020', 12.9,     12.8,        13.3,            24.4],
-          ['2030', 19.6,     50.6,         9.8,               0]
+          ['Year', 'China', 'United States', 'Europe', 'South Korea', 'Japan', 'Rest of the world'],
+          ['2015',    0,      0.2,        0.1,               0,        0,             0],
+          ['2016',  0.1,      0.2,        0.1,             0.2,      0.1,             0],
+          ['2017',  0.1,      0.2,        0.3,             0.2,        0,           0.2],
+          ['2018',  0.3,      0.3,        0.6,             0.3,        0,           0.1],
+          ['2019',  0.4,      0.3,        0.5,             0.2,        0,           0.2],
+          ['2020',  0.9,      1.1,        0.5,             0.7,      0.1,           0.1],
+          ['2021',  1.9,      2.9,          1,             0.1,        1,           0.5]
         ]);
 
         var options = {
-          title : 'Global bioenergy supply in the Net Zero Scenario',
+          title : 'Annual grid-scale battery storage additions, 2016-2021',
           hAxis: {title: 'Year'},
+          vAxis: {title: 'GW'},
           seriesType: 'bars',
           legend: { position: 'bottom' },
-          series: {5: {type: 'line'}}
+          series: {6: {type: 'line'}}
         };
 
         var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
