@@ -9,23 +9,27 @@
       function drawVisualization() {
         // Some raw data (not necessarily accurate)
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'China', 'United States', 'Europe', 'South Korea', 'Japan', 'Rest of the world'],
-          ['2015',    0,      0.2,        0.1,               0,        0,             0],
-          ['2016',  0.1,      0.2,        0.1,             0.2,      0.1,             0],
-          ['2017',  0.1,      0.2,        0.3,             0.2,        0,           0.2],
-          ['2018',  0.3,      0.3,        0.6,             0.3,        0,           0.1],
-          ['2019',  0.4,      0.3,        0.5,             0.2,        0,           0.2],
-          ['2020',  0.9,      1.1,        0.5,             0.7,      0.1,           0.1],
-          ['2021',  1.9,      2.9,          1,             0.1,        1,           0.5]
+          ['Year', 'Concentrated Solar Power'],
+          ['2011',   1705],
+          ['2012',   2567],
+          ['2013',   3942],
+          ['2014',   4599],
+          ['2015',   4850],
+          ['2016',   4970],
+          ['2017',   5069],
+          ['2018',   5811],
+          ['2019',   6377],
+          ['2020',   6511],
+          ['2021',   6399]
         ]);
 
         var options = {
-          title : 'Annual grid-scale battery storage additions, 2016-2021',
+          title : 'Electricity Capacity',
           hAxis: {title: 'Year'},
-          vAxis: {title: 'GW'},
+          vAxis: {title: 'Electricity Capacity (MW)'},
           seriesType: 'bars',
           legend: { position: 'bottom' },
-          series: {6 : {type: 'line'}}
+          series: {2: {type: 'line'}}
         };
 
         var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
