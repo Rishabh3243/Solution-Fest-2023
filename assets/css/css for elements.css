@@ -1072,7 +1072,7 @@ About
 
 .about-us {
   margin-top: 0px;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .about-us .left-image {
@@ -1081,6 +1081,7 @@ About
 
 .about-us .right-image {
   margin-left: 30px;
+  width: 45%;
   float: right;
 }
 
@@ -1093,7 +1094,15 @@ About
 }
 
 .about-us .section-heading p {
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+.about-us .section-heading ul{
+  margin-top: 70px;
+}
+
+.about-us .section-heading ul li{
+  margin-top: 20px;
 }
 
 .about-us .fact-item .icon {
