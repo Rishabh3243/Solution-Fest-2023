@@ -1659,6 +1659,41 @@ Video
   transition: all 0.3s;
 }
 
+/* 
+---------------------------------------------
+plans
+--------------------------------------------- 
+*/
+
+.plans{
+  margin-top: 0;
+  padding-top: 150px;
+}
+
+.plans .card{
+  border-radius: 1rem;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+}
+
+.plans .card .card-body .card-title{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.plans .card .card-body .card-title strong{
+  color:rgb(43, 171, 250);
+}
+
+.plans .card .card-body .card-title span{
+  font-weight: bold;
+  color:rgb(38, 174, 7);
+}
+
+.plans .card .card-body .card-text{
+  margin-bottom: 20px;
+}
 
 /* 
 ---------------------------------------------
