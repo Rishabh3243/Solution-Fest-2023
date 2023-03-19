@@ -61,7 +61,7 @@
                     <h2 class="text-center font-weight-bold mb-3">Register Yourself</h2>
                     <p style="color: rgba(0, 0, 0, 0.5); text-align: center;">A step towards new change, better change.</p>
                     <hr />
-                    <form name="signup" method="post" onSubmit="return validate()" action="signup2.php">       
+                    <form name="signup" method="post" onSubmit="return validate()" enctype="multipart/form-data" action="signup2.php">       
                         
                         <div class="row">
                             <div class="col-md-6 mb-4">
@@ -87,12 +87,15 @@
                     </div>
 
                      <!-- Password Confirmation -->
-                     <div class="mb-4">
+                    <div class="mb-4">
                         <input type="password" id="pwd2" name="conpass" placeholder="Confirm Password" class="form-control" required />
                     </div>
 
+                    <div class="mb-4">
+                        <input type="file" id="uploadPhoto" name="uploadPhoto" class="form-control" required />
+                    </div>
+
                     <!-- Installation Type -->
-                        <p class="text-danger mb-1">*Required</p>
                         <select class="form-control" id="scale" name="typeinstall">
                             <option value="Type of installation">Type of installation</option>
                             <option value="Small Scale"> Small Scale</option>
