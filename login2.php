@@ -23,7 +23,7 @@ session_start();
                     ?>
                 <script>
                     alert("Login Successfully...");
-                    window.location.href="Dash/index.html";
+                    window.location.href="index.html";
                 </script>
                 <?php
                 }
