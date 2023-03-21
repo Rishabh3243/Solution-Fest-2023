@@ -1674,7 +1674,7 @@ plans
   border-radius: 1rem;
   margin-left: 80px;
   margin-right: 80px;
-  text-align: center;
+
 }
 
 .plans .card .card-body .card-title{
@@ -1682,7 +1682,13 @@ plans
   font-size: 30px;
 }
 
-.plans .card .card-body .card-title strong{
+.plans .card .card-body .card-title em{
+  font-style: normal;
+  color:rgb(43, 171, 250);
+}
+
+.plans .card .card-body .card-subtitle em{
+  font-style: normal;
   color:rgb(43, 171, 250);
 }
 
@@ -1694,6 +1700,7 @@ plans
 .plans .card .card-body .card-text{
   margin-bottom: 20px;
 }
+
 
 /* 
 ---------------------------------------------
