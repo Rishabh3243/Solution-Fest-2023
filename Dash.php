@@ -1,6 +1,7 @@
+
 <?php
   session_start();
-  if($_SESSION['userName'])
+  if($_SESSION['email'])
   {
     $productNames = array (
         "11" => "Plug & Play Portable Biogas Plant",
@@ -51,7 +52,6 @@
         {
             $name = $user['fname'] . " " . $user['lname'];
             $email = $user['email'];
-            $type = $user['type'];
         }
     }
 
@@ -64,38 +64,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Circle</title>
     <style>
-    table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-    margin: auto;
-    }
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-    td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 
-    tr:nth-child(even) {
-    background-color: #dddddd;
-    }
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.cl12{
+    background-color: #04AA6D;
+    margin:10px;
+    border:solid black;
+    padding: 20px;
+    border-radius:10px;
+}
     </style>
 </head>
 <body>
-    <?php include_once "nav.php"?>
     <section>
     <div id="about" class="about-us section">
       <div class="container">
         <div class="row">
-            <div class="col-lg-6 align-self-center">
-                Name: <?php echo $name; ?><br>
-                Email: <?php echo $email; ?><br>
-                Type of installation: <?php echo $type; ?><br>
-            </div>  
+            <div class="cl12">
+                <div style="float:Right">
+                    <button style="color:white"><a href="index.php">Home</a></button>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    Name: <?php echo $name; ?><br>
+                    Email: <?php echo $email; ?><br>
+                </div>  
+            </div>
             <hr>
             <div class="col-lg-6 align-self-center">
-            <table>
+            <table id="customers">
                 <tr>
                     <th>SR No</th>
                     <th>Product Name</th>
@@ -134,7 +150,6 @@
             </div>  
         </div>
     </div>
-    <?php include_once "footer.php"?>
 </body>
 </html>
 <?php

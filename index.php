@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if($_SESSION['id'] && $_SESSION['email'])
+  if($_SESSION['id'] && $_SESSION['email'] || $_SESSION['userName'])
   {
 ?>
 <!DOCTYPE html>
@@ -75,7 +75,7 @@
               </li>
               <li class="scroll-to-section"><a href="#portfolio">Case Studies</a></li>
               <li class="scroll-to-section"><a href="#video">Videos</a></li> 
-              <li>
+            <!--  <li>
               <div class="navbar-menu">
                 <a class="dropdown" href="#" role="button" data-bs-toggle="dropdown">
                   Area
@@ -86,7 +86,7 @@
                   <li></li>
                 </ul>
               </div>
-              </li>
+              </li>-->
               <?php 
               $temp="#";
               $temp1="w13";
@@ -141,12 +141,6 @@
                   <h2>Our <em>mission</em> is to make alternative sources of energy reach every <span>home!</span></h2>
                   <p>We aim to live on the principle of recycling, thus making a complete green circle! </p>
                   <div class="down-buttons">
-                    <div class="main-blue-button-hover">
-                      <a href="#contact">Message Us Now</a>
-                    </div>
-                    <div class="call-button">
-                      <a href="#"><i class="fa fa-phone"></i> 010-020-0340</a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -312,105 +306,6 @@
               </div>
             </div>
             </a>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>Project Four</h4></a>
-                    <span>Website Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-01.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>Fifth Project</h4></a>
-                    <span>Digital Assets</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-02.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>Sixth Project</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-03.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>7th Project</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>8th Project</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-01.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>9th Project</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-02.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>Project Ten</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-03.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>Project Eleven</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpg" alt="">
-                <div class="hover-effect">
-                  <div class="inner-content">
-                    <a href="#"><h4>12th Project</h4></a>
-                    <span>SEO &amp; Marketing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

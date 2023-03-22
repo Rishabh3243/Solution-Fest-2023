@@ -24,7 +24,7 @@ session_start();
                     ?>
                 <script>
                     alert("Login Successfully...");
-                    window.location.href="index2.php";
+                    window.location.href="index.php";
                 </script>
                 <?php
                 }
