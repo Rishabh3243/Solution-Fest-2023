@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  if($_SESSION['id'] && $_SESSION['email'])
+  {
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,7 +90,7 @@
               <?php 
               $temp="#";
               $temp1="w13";
-              if(session_status() !== PHP_SESSION_ACTIVE)
+              if(session_status() == PHP_SESSION_ACTIVE)
               {
                 $temp1="#";
                 $temp="w13";
@@ -105,9 +110,9 @@
                   </div>
                   </a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="involved-menu">
-                  <li class="scroll-to-section"><a class="dropdown-item" href="#"><form action="" method="post"><input type="submit" name="logout" value="logout">Logout</input></form></a></li>
+                  <li class="scroll-to-section"><a class="dropdown-item" href="logout.php">Logout</a></li>
 
-                  <li class="scroll-to-section"><a class="dropdown-item" href="green cells/greencell.html">DashBoard</a></li>
+                  <li class="scroll-to-section"><a class="dropdown-item" href="Dash.php">DashBoard</a></li>
                   <li></li>
                 </ul>
                 </div>
@@ -441,7 +446,7 @@
               <li>Basic Support</li>
             </ul>
             <div class="main-blue-button-hover">
-              <a href="#">Get Started</a>
+              <a href="log.php?id=1">Get it Now</a>
             </div>
           </div>
         </div>
@@ -457,7 +462,7 @@
               <li>Pro Support</li>
             </ul>
             <div class="main-blue-button-hover">
-              <a href="#">Get it Now</a>
+              <a href="log.php?id=2">Get it Now</a>
             </div>
           </div>
         </div>
@@ -473,7 +478,7 @@
               <li>Best Support</li>
             </ul>
             <div class="main-blue-button-hover">
-              <a href="#">Buy Now</a>
+              <a href="log.php?id=3">Buy Now</a>
             </div>
           </div>
         </div>
@@ -671,9 +676,16 @@
     });
   </script>
 </body>
-<?php
-                    if(isset($_POST[logout]))
-                    {
-                      session_destroy();}
-?>
 </html>
+<?php
+  }
+  else
+  {
+    ?>
+    <script>
+      alert("Please Login...");
+      window.location.href="login.html";
+    </script>
+    <?php
+  }
+?>

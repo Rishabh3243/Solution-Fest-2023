@@ -14,11 +14,12 @@ session_start();
             $data = $db->retrieve("users");
             $data = json_decode($data, 1);
 
-            foreach($data as $user)
+            foreach($data as $id => $user)
             {
                 if($user['password']==$pass)
                 {
-                    $_SESSION['userName']=$email;
+                    $_SESSION['id']=$id;
+                    $_SESSION['email']=$email;
                     $flag=0;
                     ?>
                 <script>
