@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>Green Circle</title>
-
+    <link rel="stylesheet" href="index.css">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -82,8 +82,36 @@
                 </ul>
               </div>
               </li>
-              <li>
-              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="login.html">Sign In</a></div></li> </li>
+              <?php 
+              $temp="#";
+              $temp1="w13";
+              if(session_status() !== PHP_SESSION_ACTIVE)
+              {
+                $temp1="#";
+                $temp="w13";
+              }
+              ?>
+              <li class="scroll-to-section" id=<?php echo $temp;?>>
+              <div class='main-red-button-hover'><a href='login.html'>Sign In</a></div>
+              </li>
+              <li id=<?php echo $temp1;?>>
+                <div class='navbar-menu'>
+                  <a class='dropdown' href='#' role='button' data-bs-toggle='dropdown'>
+                  <div class='main-red-button-hover'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="Black" class="bi bi-person-circle" viewBox="0 0 16 16" style="margin:-30px">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                  </div>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="involved-menu">
+                  <li class="scroll-to-section"><a class="dropdown-item" href="#"><form action="" method="post"><input type="submit" name="logout" value="logout">Logout</input></form></a></li>
+
+                  <li class="scroll-to-section"><a class="dropdown-item" href="green cells/greencell.html">DashBoard</a></li>
+                  <li></li>
+                </ul>
+                </div>
+              </li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -223,7 +251,7 @@
 
   <div id="portfolio" class="our-portfolio section">
     <div class="portfolio-left-dec">
-      <img src='assets/images/portfolio-left-dec.png' alt="">
+      <img src="assets/images/portfolio-left-dec.png" alt="">
     </div>
     <div class="container">
       <div class="row">
@@ -643,4 +671,9 @@
     });
   </script>
 </body>
+<?php
+                    if(isset($_POST[logout]))
+                    {
+                      session_destroy();}
+?>
 </html>
