@@ -434,51 +434,23 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4">
-          <div class="item first-item">
-            <h4>Starter Plan</h4>
-            <em>$160/mo</em>
-            <span>$140</span>
-            <ul>
-              <li>10 Projects</li>
-              <li>100 GB space</li>
-              <li>20 SEO checkups</li>
-              <li>Basic Support</li>
-            </ul>
-            <div class="main-blue-button-hover">
-              <a href="log.php?id=1">Get it Now</a>
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <h4>Solax Panels 3-6kW</h4>
+              <div class="d2"><img src="https://www.solaxpower.com/wp-content/uploads/2020/01/X1BoostWebImage.png" alt=""></div><br>
+              <button type="button" class="btn btn-success"><a class="d23" href="log.php?id=21" target="_blank">BUY</a></button>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="item second-item">
-            <h4>Standard Plan</h4>
-            <em>$240/mo</em>
-            <span>$200</span>
-            <ul>
-              <li>20 Projects</li>
-              <li>200 GB space</li>
-              <li>50 SEO checkups</li>
-              <li>Pro Support</li>
-            </ul>
-            <div class="main-blue-button-hover">
-              <a href="log.php?id=2">Get it Now</a>
+            <div class="item">
+              <h4>Plug & Play Portable Biogas Plant</h4>
+              <div class="d2"><img src="https://5.imimg.com/data5/OX/BA/MY-31987046/portable-biogas-plant-500x500.png" alt=""></div><br>
+              <br />
+              <button type="button" class="btn btn-success"><a class="d23" href="log.php?id=11" target="_blank">BUY</a></button>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="item third-item">
-            <h4>Advanced Plan</h4>
-            <em>$360/mo</em>
-            <span>$280</span>
-            <ul>
-              <li>30 Projects</li>
-              <li>300 GB space</li>
-              <li>100 SEO checkups</li>
-              <li>Best Support</li>
-            </ul>
-            <div class="main-blue-button-hover">
-              <a href="log.php?id=3">Buy Now</a>
+            <div class="item">
+              <h4>Eco friendly aloe vera batteries</h4>
+              <div class="d2"><img src="assets/images/aloecell.png" alt="" height="310px" ></div>
+              <button type="button" class="btn btn-success"><a class="d23" href="log.php?id=24" target="_blank">BUY</a></button>
             </div>
           </div>
         </div>

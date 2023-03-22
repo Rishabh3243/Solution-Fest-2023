@@ -19,6 +19,7 @@
             "21" => "Solax Panels 3-6kW",
             "22" => "Small Commercial PV Arrays",
             "23" => "Harvesting More Energy 80-150kW",
+            "24" => "Eco friendly aloe vera batteries"
         );
 
         $productLinks = array (
@@ -35,6 +36,7 @@
             "Solax Panels 3-6kW" => "https://www.solaxpower.com/x1-boost/",
             "Small Commercial PV Arrays" => "https://www.solaxpower.com/x3-mic-pro/",
             "Harvesting More Energy 80-150kW" => "https://www.solaxpower.com/x3-forth/",
+            "Eco friendly aloe vera batteries" => "https://www.aloeecell.com/"
         );
 
         $datetime = date("d-m-Y h:i:sa");
@@ -89,4 +91,6 @@
         </script>
         <?php
     }
+    else
+        header("location: logout.php");
 ?>
